@@ -13,3 +13,5 @@ plot3d(naOmited$Comp.1, naOmited$Comp.2, naOmited$Comp.3, xlab="comp1", ylab="co
 
 # add the labels
 with(naOmited, text3d(naOmited$Comp.1, naOmited$Comp.2, naOmited$Comp.3, naOmited$Gene))
+
+# added comment, testing multiple computers and central git repo
