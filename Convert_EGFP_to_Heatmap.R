@@ -1,11 +1,10 @@
----title: "Parse Columbus EGFP Expressionv into Platemaps"#For making convenient platemaps from columbus data#Runs in R version 3.3.2
-output
+---title: "Parse Columbus EGFP Expressionv into Platemaps"#For making convenient platemaps from columbus data#Runs in R version 3.3.2 output
 #Check for installed packages
 packages <- c("dplyr", "tidyr", "platetools", "ggplot2", "viridis")
 
 
 #, "openxlsx","RTools")if (length(setdiff(packages, rownames(installed.packages()))) > 0) {
-install.packages(setdiff(packages, rownames(installed.packages())))}
+install.packages(setdiff(packages, rownames(installed.packages())))
 
 #Require packages.
 lapply(packages, require, character.only = TRUE)
@@ -31,6 +30,6 @@ raw_map(data = dat$Nuclei...Intensity.Cytoplasm.EGFP.Mean...Median.per.Well,
      scale_fill_viridis() +
      geom_text(aes(label = dat$Nuclei...Intensity.Cytoplasm.EGFP.Mean...Median.per.Well))
 
-}
+
 
 #Import .csv containing file
